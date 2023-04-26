@@ -1,0 +1,206 @@
+* {
+  overflow: hidden;
+}
+body {
+  background: #cfd8dc;
+  color: rgb(85, 85, 85);
+  margin: 0;
+  padding: 0;
+}
+.nav {
+  width: 100%;
+  position: fixed;
+}
+.nav ul {
+  float: right;
+  list-style-type: none;
+  padding-top: 20px;
+  padding-right: 50px;
+}
+.nav img {
+  padding: 10px;
+  width: 150px;
+  color: black;
+}
+.nav img:hover {
+  opacity: 0.75;
+}
+.nav ul li {
+  display: inline;
+  padding: 15px;
+  margin: 15px;
+}
+.nav ul li:hover {
+  opacity: 0.75;
+}
+.nav ul li a {
+  color: #333d4a;
+  text-decoration: none;
+  font-family: "june-expt-variable", sans-serif;
+  font-variation-settings: "STYL" 28;
+  font-size: large;
+  font-weight: 600;
+}
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+section .air {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(https://1.bp.blogspot.com/-xQUc-TovqDk/XdxogmMqIRI/AAAAAAAACvI/AizpnE509UMGBcTiLJ58BC6iViPYGYQfQCLcBGAsYHQ/s1600/wave.png);
+  background-size: 1000px 100px;
+}
+section .air.air1 {
+  animation: wave 30s linear infinite;
+  z-index: 1000;
+  opacity: 1;
+  animation-delay: 0s;
+  bottom: 0;
+}
+section .air.air2 {
+  animation: wave2 15s linear infinite;
+  z-index: 999;
+  opacity: 0.5;
+  animation-delay: -5s;
+  bottom: 10px;
+}
+section .air.air3 {
+  animation: wave 30s linear infinite;
+  z-index: 998;
+  opacity: 0.2;
+  animation-delay: -2s;
+  bottom: 15px;
+}
+section .air.air4 {
+  animation: wave2 5s linear infinite;
+  z-index: 997;
+  opacity: 0.7;
+  animation-delay: -5s;
+  bottom: 20px;
+}
+@keyframes wave {
+  0% {
+    background-position-x: 0px;
+  }
+  100% {
+    background-position-x: 1000px;
+  }
+}
+@keyframes wave2 {
+  0% {
+    background-position-x: 0px;
+  }
+  100% {
+    background-position-x: -1000px;
+  }
+}
+.member-menu-background {
+  background-color: #5a646e;
+}
+.member-menu-items {
+  position: relative;
+  width: 300px;
+  margin-right: 50px;
+  margin-top: 300px;
+  padding: 50px;
+  float: left;
+  text-align: center;
+  border-radius: 10px;
+}
+.member-menu-items .member-logo {
+  width: 50px;
+  border-radius: 85px;
+  background-color: #ef7377;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+.member-menu-items h1,
+h2 {
+  font-family: "june-expt-variable", sans-serif;
+  font-variation-settings: "STYL" 50;
+  font-weight: 600;
+  font-size: xx-large;
+}
+
+.discord-image {
+  width: 50px;
+}
+
+hr {
+  border: 1px solid #737d86;
+}
+
+.blue-button {
+  display: inline-block;
+  font-family: Whitney, "Open Sans", Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 11pt;
+  border-radius: 3px;
+  cursor: pointer;
+  height: 45px;
+  width: 250px;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+  background-color: #ef7377;
+  border: 2px solid #ef7377;
+  color: #fff;
+  justify-content: center;
+  margin-top: 20px;
+  font-family: "june-expt-variable", sans-serif;
+  font-variation-settings: "STYL" 28;
+  font-size: large;
+  font-weight: 600;
+}
+
+.blue-button:hover {
+  opacity: 0.75;
+}
+
+.discord {
+  vertical-align: middle;
+}
+
+h1 {
+  position: absolute;
+  top: 35%;
+  transform: translateY(-50%);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  color: #333d4a;
+  text-align: center;
+  font-size: xx-large;
+  font-family: "june-expt-variable", sans-serif;
+}
+
+.contact-button-menu {
+  margin-top: 300px;
+  width: 250px;
+  margin-left: 44%;
+  margin-top: 650px;
+}
+
+.contact-button-menu img {
+  width: 45px;
+  margin-left: 40%;
+  color: #333d4a;
+}
+
+.contact-button {
+  display: inline-block;
+  font-family: Whitney, "june-expt-variable", sans-serif;
+  font-size: x-large;
+  font-weight: bolder;
+  color: #333d4a;
+  cursor: pointer;
+  width: 250px;
+  text-decoration: none;
+  text-align: center;
+  justify-content: center;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skript Documentation | Home</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
+  </head>
+  <body>
+    <section class="section1">
+      <div class="air air1"></div>
+      <div class="air air2"></div>
+      <div class="air air3"></div>
+      <div class="air air4"></div>
+      <div class="nav">
+        <a href=""><img src="./IMAGES/logo.png" alt="" /></a>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Documentation</a></li>
+          <li><a href="#">Tutorials</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      
+
+      <div class="type-wrap">
+        <!-- add static words/sentences here (i.e. text that you don't want to be removed)-->
+        <h1><br /><span class="ityped"></span></h1>
+        <script src="https://unpkg.com/ityped@0.0.10"></script>
+      </div>
+      <div class="contact-button-menu">
+        <a class="contact-button" href="">Contact</a>
+        <a href=""><img src="./IMAGES/arrow.png" alt=""></a>
+      </div>
+    </section>
+    <script>
+      window.ityped.init(document.querySelector(".ityped"), {
+        strings: [
+          "Welcome to Skript Documentation",
+          "This page is owned by Barnie",
+          "Learn to skript the proper way",
+        ],
+        loop: true,
+      });
+    </script>
+  </body>
+</html>
+
+
+<div class="member-menu">
+  <div class="member-menu-items">
+    <img class="member-logo" src="../IMAGES/member.png" alt="" />
+    <hr class="solid" />
+    <h2>Discord Members</h1>
+    <h2>Unknown</h2>
+    <h2>Daily Visitors</h1>
+    <h2>Unknown</h2>
+    <hr class="solid" />
+    <button class="blue-button">Open Discord</button>
+  </div>
+  <div class="member-menu-background"></div>
+</div>
